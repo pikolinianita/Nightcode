@@ -1,4 +1,4 @@
-name: Clojure CI
+name: Nightcode Windows
 
 on:
   push:
@@ -32,5 +32,5 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-       name: my-jar
+       name: nightcode-windows
        path: /home/runner/work/Nightcode/Nightcode/target/nightcode-2.8.4-SNAPSHOT-standalone.jar
