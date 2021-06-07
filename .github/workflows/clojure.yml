@@ -27,5 +27,5 @@ jobs:
       shell: bash
     
     - name: do uberjar 
-      run: clj -A:prod uberjar windows
+      run: clojure -A:prod uberjar windows
       shell: bash
