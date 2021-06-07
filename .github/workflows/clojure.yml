@@ -13,7 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: lein deps
-    - name: Run tests
-      run: lein test
+    - name: Install clojure tools-deps
+      # uses: DeLaGuardo/setup-clojure@master
+      uses: ./
+      with:
+        cli: 1.10.1.693
+        
+    - name: Execute clojure code on Linux and MacOS
+      run: clojure -e "(+ 1 1)"
+      shell: bash
