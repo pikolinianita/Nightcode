@@ -25,3 +25,7 @@ jobs:
     - name: Execute clojure code on Linux and MacOS
       run: clojure -e "(+ 1 1)"
       shell: bash
+    
+    - name: do uberjar 
+      run: clj -A:prod uberjar windows
+      shell: bash
